@@ -1,13 +1,21 @@
 # Console Proxy Setting in Windows
 
-## In PowerShell:
-```bash
-$env:http_proxy="ip-address:8080"  
-$env:https_proxy="ip-address:8080"
-curl http://www.google.com
-```
 ## In CMD:
 ```bash
-set HTTP_PROXY=ip-address:8080  
+set ip_address=
+set HTTP_PROXY=%ip_address%:8080  
 curl -vv http://www.google.com
+```
+
+## In PowerShell:
+```bash
+$env:http_proxy="ip_address:8080"
+$env:https_proxy="ip_address:8080"
+curl http://www.google.com
+```
+
+## Test pip outer source index e.g. Tsinghua
+```
+pip uninstall pandas
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas
 ```
