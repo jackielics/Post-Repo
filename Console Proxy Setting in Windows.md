@@ -2,15 +2,15 @@
 
 ## In CMD:
 ```bash
-set ip_address=
-set HTTP_PROXY=%ip_address%:8080  
+set proxy_ip=
+set HTTP_PROXY=%proxy_ip%:8080  
 curl -vv http://www.google.com
 ```
 
 ## In PowerShell:
 ```bash
-$env:http_proxy="ip_address:8080"
-$env:https_proxy="ip_address:8080"
+$env:http_proxy="proxy_ip:8080"
+$env:https_proxy="proxy_ip:8080"
 curl http://www.google.com
 ```
 
