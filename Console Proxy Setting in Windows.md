@@ -5,6 +5,7 @@
 set proxy_ip=
 set HTTP_PROXY=%proxy_ip%:8080
 curl -vv http://www.google.com
+curl -vv http://www.baidu.com
 ```
 
 ## In PowerShell:
@@ -12,6 +13,7 @@ curl -vv http://www.google.com
 $env:http_proxy="proxy_ip:8080"
 $env:https_proxy="proxy_ip:8080"
 curl http://www.google.com
+curl http://www.baidu.com
 ```
 
 ## Test pip outer source index e.g. Tsinghua
