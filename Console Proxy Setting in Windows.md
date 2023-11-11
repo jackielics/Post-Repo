@@ -16,6 +16,6 @@ curl http://www.google.com
 
 ## Test pip outer source index e.g. Tsinghua
 ```
-pip uninstall pandas
+pip uninstall pandas -y
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pandas
 ```
