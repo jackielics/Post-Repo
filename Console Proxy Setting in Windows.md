@@ -3,7 +3,7 @@
 ## In CMD:
 ```bash
 set proxy_ip=
-set HTTP_PROXY=%proxy_ip%:8080  
+set HTTP_PROXY=%proxy_ip%:8080
 curl -vv http://www.google.com
 ```
 
