@@ -2,12 +2,12 @@
 
 ## In PowerShell:
 ```bash
-$env:http_proxy="http://proxyau.huawei.com:8080"  
-$env:https_proxy="http://proxyau.huawei.com:8080"  
+$env:http_proxy="ip-address:port"  
+$env:https_proxy="ip-address:port"
 curl http://www.google.com
 ```
 ## In CMD:
 ```bash
-set HTTP_PROXY=http://proxyau.huawei.com:8080  
+set HTTP_PROXY=ip-address:port  
 curl -vv http://www.google.com
 ```
